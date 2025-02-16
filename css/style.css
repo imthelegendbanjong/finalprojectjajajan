@@ -70,11 +70,14 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .grid figure:nth-child(3n) {
+        grid-column: span 2;
+    }
+
     .grid img {
         border-radius: 0;
     }
 }
-
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
